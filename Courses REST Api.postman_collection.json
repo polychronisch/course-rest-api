@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "2ccbcdd3-ab68-4f8d-9265-d01437875243",
+		"name": "Courses REST Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46097738"
+	},
+	"item": [
+		{
+			"name": "courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store course",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Schoox course 1\",\r\n    \"description\": \"A lorem ipsum dummy description for a Schoox course \",\r\n    \"status\": \"published\",\r\n    \"is_premium\": true,\r\n    \"tags\": [\r\n        \"php\",\r\n        \"laravel\",\r\n        \"backend\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show course",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/courses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courses",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update put",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Schoox course 1 updated\",\r\n    \"description\": \"A lorem ipsum dummy description for a Schoox course \",\r\n    \"status\": \"published\",\r\n    \"is_premium\": true,\r\n    \"tags\": [\r\n        \"php\",\r\n        \"laravel\",\r\n        \"backend\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/courses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "soft delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Schoox course 1 updated\",\r\n    \"description\": \"A lorem ipsum dummy description for a Schoox course \",\r\n    \"status\": \"published\",\r\n    \"is_premium\": true,\r\n    \"tags\": [\r\n        \"php\",\r\n        \"laravel\",\r\n        \"backend\"\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/courses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"courses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
