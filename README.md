@@ -11,8 +11,6 @@
 
 ✅ Soft deletes (trash-friendly 🗑️)
 
-✅ OpenAPI/Swagger documentation 📖
-
 ✅ PHPUnit tests with high coverage 🧪
 
 ## 🔨 Future Improvements
@@ -43,12 +41,12 @@
 
 2. Set up the backend (Laravel):
    
-   cd backend
-   composer install
-   cp .env.example .env
-   php artisan key:generate
-   php artisan migrate
-   php artisan serve
+   * cd course-rest-api
+   * composer install
+   * cp .env.example .env
+   * php artisan key:generate
+   * php artisan migrate
+   * php artisan serve
 
 ## 💡 Usage
 
